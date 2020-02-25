@@ -10,6 +10,6 @@ index = 0
   end
   words_string = reversed_word.join() #// "?uoy era woh dna ,ereht olleH"
   words_string_split = words_string.split() # // ["?uoy", "era", "woh", "dna", ",ereht", "olleH"]
-  result = words_string_split.reverse_each.!collect{|x| x}
+  result = words_string_split.reverse_each.collect{|x| x}
   result.join(' ')
 end
