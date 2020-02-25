@@ -28,5 +28,5 @@
 def reverse_each_word(phrase)
   phrase_split = phrase.split()
   reversed_array = phrase_split.collect {|x| x.reverse}
-  reversed_array
+  reversed_array.join(' ')
 end
