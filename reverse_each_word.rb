@@ -13,3 +13,21 @@ index = 0
   result = words_string_split.reverse_each.collect{|x| x}
   result.join(' ')
 end
+
+words_string_split.collect do
+  index = words_string_split.length
+  while index > 0 do
+    result << words_string_split.pop()
+    index += 1
+  end
+end
+
+
+
+
+def reverse_each_word(phrase)
+  phrase_split = phrase.split()
+  reversed_array  = phrase_split.collect {|x| x.reverse}
+  reversed_array.join(' ')
+  reversed_array
+end
